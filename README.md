@@ -18,7 +18,7 @@ assets/img/           Profile photo, favicon, touch icon and social preview imag
 
 ## Editing content
 
-All text is in `index.html`, grouped by section (`#summary`, `#experience`, `#work`, `#skills`, `#certifications`, `#education`, `#contact`).
+All text is in `index.html`, grouped by section (`#summary`, `#experience`, `#work`, `#stack`, `#certifications`, `#education`, `#contact`).
 
 - **Add a role:** copy an `<li class="job">` block in the Experience section. Durations are calculated from `data-from` / `data-to` (`YYYY-MM-DD`). Leave out `data-to` for a current role.
 - **Add a highlight:** copy an `<article class="work">` block in Selected Work.
