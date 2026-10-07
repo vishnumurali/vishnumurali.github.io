@@ -11,7 +11,7 @@ Plain HTML, CSS and JavaScript with no framework, build step or dependencies. Gi
 ```
 index.html            All page content
 404.html              Not-found page
-assets/css/style.css  Blueprint theme (light: drafting paper, dark: blueprint) and the print layout
+assets/css/style.css  Light/dark theme (Geist type, neutral palette) and the print layout
 assets/js/main.js     Stack legend, tracing, blueprints, career rows, detail panel, search palette
 assets/img/           Profile photo, favicon, touch icon and social preview image
 ```

@@ -230,7 +230,7 @@
     { id: 'sharegate', label: 'ShareGate', name: 'ShareGate', cat: 'ops', roles: ['sopra', 'accenture'], keys: ['Migrated SharePoint 2013/2016 to SharePoint Online', 'data migration'] },
   ].map((t) => ({ ...t, roles: t.roles.filter((id) => roleById[id]) }));
 
-  // Legend codes: category letter + position (A1, A2 … F4)
+  // Short codes (A1 … F4) let the search palette match by code
   CATS.forEach((c) => TECH.filter((t) => t.cat === c.id).forEach((t, i) => { t.code = `${c.code}${i + 1}`; }));
   const techById = Object.fromEntries(TECH.map((t) => [t.id, t]));
   $$('.tech-total').forEach((n) => { n.textContent = String(TECH.length); if (n.dataset.count) n.dataset.count = String(TECH.length); });
@@ -311,8 +311,12 @@
   const linkButton = (code, label, color, onClick) => {
     const b = el('button');
     b.type = 'button';
-    if (color) b.style.setProperty('--c-link', color);
-    b.append(el('b', null, code), label);
+    if (color) {
+      b.style.setProperty('--c-link', color);
+      b.append(el('i', 'd-link-dot'), label);
+    } else {
+      b.append(el('b', null, code), label);
+    }
     b.addEventListener('click', onClick);
     return b;
   };
@@ -323,14 +327,13 @@
     panel.style.setProperty('--c', `var(--c-${t.cat})`);
     content.classList.remove('is-in');
 
-    const kicker = el('p', 'd-cat', `${cat.code} · ${cat.label}`);
+    const kicker = el('p', 'd-cat');
+    kicker.append(el('span', 'd-dot'), cat.label);
     const head = el('div', 'd-head');
-    const code = el('span', 'd-code', t.code);
-    code.setAttribute('aria-hidden', 'true');
     const title = el('h3', 'd-title', t.name);
     title.id = 'drawer-title';
     title.tabIndex = -1;
-    head.append(code, title);
+    head.append(title);
 
     const stats = el('dl', 'd-stats');
     [['period', `${u.fromYear} – ${u.toLabel}`], ['roles', `${u.roles.length} of ${roles.length}`], ['role tenure', `${u.years} yrs`]]
@@ -348,7 +351,7 @@
       bar.style.width = `${Math.max(1.5, pct(r.to) - pct(r.from))}%`;
       bar.style.setProperty('--k', k);
       track.append(bar);
-      row.append(el('span', 'dt-label', `${r.no} ${r.org}`), track);
+      row.append(el('span', 'dt-label', r.org), track);
       timeline.append(row);
     });
     const axis = el('div', 'dt-axis');
@@ -365,7 +368,7 @@
     u.roles.forEach((r) => {
       const item = el('li', 'd-role');
       const rh = el('div', 'd-role-head');
-      rh.append(el('span', 'd-org', `${r.no} · ${r.org}`), el('span', 'd-dates', r.dates));
+      rh.append(el('span', 'd-org', r.org), el('span', 'd-dates', r.dates));
       item.append(rh, el('p', 'd-role-title', r.title));
       const pts = r.points.filter((p) => mentions(p, t.keys));
       if (pts.length) {
@@ -383,7 +386,7 @@
     const bps = bpCards.map((card, i) => ({ card, i })).filter(({ i }) => bpTabs[i]?._techs.has(t.id));
     if (bps.length) {
       const wrap = el('div', 'd-links');
-      bps.forEach(({ card, i }) => wrap.append(linkButton(`BP-0${i + 1}`, $('.bp-title', card).textContent, null, () => {
+      bps.forEach(({ card, i }) => wrap.append(linkButton(String(i + 1).padStart(2, '0'), $('.bp-title', card).textContent, null, () => {
         closeDrawer(false);
         selectBp(i);
         $('#blueprints').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
@@ -398,7 +401,7 @@
         showTech(x.id);
         $('#drawer-title', drawer)?.focus({ preventScroll: true });
       })));
-      parts.push(el('h4', 'd-sub', `More in ${cat.code} · ${cat.label}`), wrap);
+      parts.push(el('h4', 'd-sub', `More in ${cat.label}`), wrap);
     }
 
     parts.forEach((p, i) => p.style.setProperty('--d', i));
@@ -465,7 +468,7 @@
       btn.setAttribute('aria-controls', `cat-${c.id}`);
       const sign = el('span', 'cat-sign');
       sign.setAttribute('aria-hidden', 'true');
-      btn.append(el('span', 'cat-code', c.code), el('span', 'cat-name', c.label), el('span', 'cat-count', String(items.length).padStart(2, '0')), sign);
+      btn.append(el('span', 'cat-dot'), el('span', 'cat-name', c.label), el('span', 'cat-count', String(items.length)), sign);
       btn.addEventListener('click', () => setCat(wrap.classList.contains('is-open') ? null : c.id));
 
       const panelEl = el('div', 'cat-panel');
@@ -480,8 +483,8 @@
         b.dataset.tech = t.id;
         b.style.setProperty('--i', i);
         b.title = `${t.name} · ${u.fromYear}–${u.toLabel} · ${u.roles.length} role${u.roles.length > 1 ? 's' : ''}`;
-        b.setAttribute('aria-label', `${t.code} ${t.name}, ${u.fromYear} to ${u.toLabel}. Show details`);
-        b.append(el('span', 'item-code', t.code), el('span', 'item-name', t.label), el('span', 'item-yrs', `${u.years}y`));
+        b.setAttribute('aria-label', `${t.name}, ${u.fromYear} to ${u.toLabel}. Show details`);
+        b.append(el('span', 'item-dot'), el('span', 'item-name', t.label), el('span', 'item-yrs', `${u.years} yrs`));
         b.addEventListener('click', () => showTech(t.id, b));
         bindTrace(b, [t.id]);
         li.append(b);
@@ -505,7 +508,7 @@
     b.type = 'button';
     b.dataset.tech = id;
     b.style.setProperty('--c', `var(--c-${t.cat})`);
-    b.append(el('span', 'tag-code', t.code), label);
+    b.append(el('span', 'tag-dot'), label);
     b.setAttribute('aria-label', `${label}: show where it was used`);
     b.addEventListener('click', () => showTech(id, b));
     bindTrace(b, [id]);
@@ -533,7 +536,7 @@
           bindTrace(box, ids);
         }
         box.append(...Array.from(li.childNodes));
-        if (ids.length) box.prepend(el('span', 'node-code', ids.map((id) => techById[id].code).join(' · ')));
+        box.prepend(el('span', 'node-cat', ids.length ? catById[techById[ids[0]].cat].label : 'Process step'));
         li.removeAttribute('data-tech');
         li.style.setProperty('--i', i * 2);
         li.append(box);
@@ -614,10 +617,10 @@
   const ENTRIES = [
     ...TECH.map((t) => {
       const u = usage(t);
-      return { group: 'Technologies', code: t.code, color: `var(--c-${t.cat})`, label: t.name, meta: `${u.fromYear}–${u.toLabel}`, keywords: [t.label, catById[t.cat].label, ...(t.aliases || [])].join(' '), run: () => showTech(t.id) };
+      return { group: 'Technologies', code: t.code, dot: true, color: `var(--c-${t.cat})`, label: t.name, meta: `${catById[t.cat].label} · ${u.fromYear}–${u.toLabel}`, keywords: [t.label, catById[t.cat].label, ...(t.aliases || [])].join(' '), run: () => showTech(t.id) };
     }),
     ...bpCards.map((card, i) => ({
-      group: 'Blueprints', code: `BP${i + 1}`, label: $('.bp-title', card).textContent, meta: $('.bp-cat', card).textContent,
+      group: 'Blueprints', code: String(i + 1).padStart(2, '0'), label: $('.bp-title', card).textContent, meta: $('.bp-cat', card).textContent,
       keywords: $$('.node-name', card).map((n) => n.textContent).join(' '),
       run: () => { selectBp(i); scrollTo($('#blueprints')); },
     })),
@@ -675,7 +678,7 @@
         const at = q ? entry.label.toLowerCase().indexOf(q) : -1;
         if (at >= 0) label.append(entry.label.slice(0, at), el('mark', null, entry.label.slice(at, at + q.length)), entry.label.slice(at + q.length));
         else label.textContent = entry.label;
-        li.append(el('span', 'pl-code', entry.code), label, el('span', 'pl-meta', entry.meta));
+        li.append(entry.dot ? el('span', 'pl-dot') : el('span', 'pl-code', entry.code), label, el('span', 'pl-meta', entry.meta));
         li.addEventListener('pointermove', () => { if (pActive !== idx) setActive(idx); });
         li.addEventListener('click', () => runEntry(idx));
         pList.append(li);
