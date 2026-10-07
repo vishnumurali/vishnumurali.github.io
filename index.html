@@ -3,46 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vishnu Muralikrishnan — SharePoint &amp; Microsoft 365 Developer</title>
-  <meta name="description" content="SharePoint Developer with 9.5+ years of experience in SharePoint Online, SPFx, React, Power Platform, Nintex Automation Cloud and Azure. Module Lead at Mphasis, Bangalore.">
+  <title>Vishnu Muralikrishnan — SharePoint Developer</title>
+  <meta name="description" content="Vishnu Muralikrishnan — SharePoint Developer and Module Lead with 9.5+ years of experience in SharePoint Online, SPFx, Power Platform, Nintex Automation Cloud and Azure. Bangalore, India.">
   <meta name="author" content="Vishnu Muralikrishnan">
-  <meta name="theme-color" content="#070b14" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#fbfbfc">
   <link rel="canonical" href="https://vishnumurali.github.io/">
 
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://vishnumurali.github.io/">
   <meta property="og:site_name" content="Vishnu Muralikrishnan">
-  <meta property="og:title" content="Vishnu Muralikrishnan — SharePoint &amp; Microsoft 365 Developer">
-  <meta property="og:description" content="9.5+ years building enterprise solutions on SharePoint Online, SPFx, Power Platform, Nintex and Azure.">
+  <meta property="og:title" content="Vishnu Muralikrishnan — SharePoint Developer">
+  <meta property="og:description" content="SharePoint Developer and Module Lead with 9.5+ years of experience in SharePoint Online, SPFx, Power Platform, Nintex and Azure.">
   <meta property="og:image" content="https://vishnumurali.github.io/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Vishnu Muralikrishnan — SharePoint &amp; Microsoft 365 Developer">
+  <meta property="og:image:alt" content="Vishnu Muralikrishnan — SharePoint Developer">
   <meta property="profile:first_name" content="Vishnu">
   <meta property="profile:last_name" content="Muralikrishnan">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vishnu Muralikrishnan — SharePoint &amp; Microsoft 365 Developer">
-  <meta name="twitter:description" content="9.5+ years building enterprise solutions on SharePoint Online, SPFx, Power Platform, Nintex and Azure.">
+  <meta name="twitter:title" content="Vishnu Muralikrishnan — SharePoint Developer">
+  <meta name="twitter:description" content="SharePoint Developer and Module Lead with 9.5+ years of experience in SharePoint Online, SPFx, Power Platform, Nintex and Azure.">
   <meta name="twitter:image" content="https://vishnumurali.github.io/assets/img/og-image.png">
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preload" as="image" href="assets/img/profile.webp" fetchpriority="high">
 
   <script>
     (function () {
       var d = document.documentElement, t = null;
       d.classList.add('js');
       try { t = localStorage.getItem('theme'); } catch (e) {}
-      if (t !== 'light' && t !== 'dark') {
-        t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-      }
-      d.setAttribute('data-theme', t);
+      d.setAttribute('data-theme', t === 'dark' ? 'dark' : 'light');
     })();
   </script>
   <script type="application/ld+json">
@@ -51,13 +46,12 @@
     "@type": "Person",
     "name": "Vishnu Muralikrishnan",
     "url": "https://vishnumurali.github.io/",
-    "image": "https://vishnumurali.github.io/assets/img/profile.webp",
     "jobTitle": "SharePoint Developer (Module Lead)",
     "worksFor": { "@type": "Organization", "name": "Mphasis" },
     "address": { "@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN" },
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Sri Ramakrishna Institute of Technology" },
     "email": "mailto:vishnu.m70@gmail.com",
-    "sameAs": ["https://www.linkedin.com/in/vishnumuralikrishnan", "https://github.com/vishnumurali"],
+    "sameAs": ["https://www.linkedin.com/in/vishnumuralikrishnan"],
     "knowsAbout": ["SharePoint Online", "SharePoint Framework (SPFx)", "React", "TypeScript", "Power Apps", "Power Automate", "Dataverse", "Nintex Automation Cloud", "Nintex Forms", "Microsoft Azure", "Azure Functions", "Microsoft Graph API", "PnP PowerShell", "Azure DevOps", "SharePoint Migration"]
   }
   </script>
@@ -65,788 +59,382 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="scroll-progress" aria-hidden="true"></div>
 
-  <!-- Icon sprite -->
   <svg class="sprite" aria-hidden="true" focusable="false">
-    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
-    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
-    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
     <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
-    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14" rx="1"/></symbol>
     <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
     <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
-    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
-    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
-    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
-    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></symbol>
-    <symbol id="i-languages" viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
-    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
-    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
-    <symbol id="i-workflow" viewBox="0 0 24 24"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></symbol>
-    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
-    <symbol id="i-cloud-up" viewBox="0 0 24 24"><path d="M12 13v8"/><path d="M4 14.9A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.24"/><path d="m8 17 4-4 4 4"/></symbol>
-    <symbol id="i-branch" viewBox="0 0 24 24"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
-    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
-    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
-    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
-    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
-    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
-    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
-    <symbol id="i-package" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.7 4.73a2 2 0 0 0 2 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></symbol>
-    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
-    <symbol id="i-phone-app" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
-    <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></symbol>
-    <symbol id="i-seat" viewBox="0 0 24 24"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M5 18v2"/><path d="M19 18v2"/></symbol>
-    <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
-    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9.5 3 11 5 12 8c1-3 2.5-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
-    <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
-    <symbol id="i-id-card" viewBox="0 0 24 24"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></symbol>
-    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
-    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
   </svg>
 
-  <!-- Navigation -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="Vishnu Muralikrishnan, back to top">
-        <span class="brand-mark" aria-hidden="true">VM</span>
-        <span class="brand-name">Vishnu Muralikrishnan</span>
-      </a>
-      <nav class="nav-links" id="nav-links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#credentials">Credentials</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <button class="icon-btn theme-toggle" type="button" aria-label="Switch color theme">
-          <svg class="i i-sun"><use href="#i-sun"/></svg>
-          <svg class="i i-moon"><use href="#i-moon"/></svg>
-        </button>
-        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
-          <svg class="i i-open"><use href="#i-menu"/></svg>
-          <svg class="i i-close"><use href="#i-x"/></svg>
-        </button>
-      </div>
-    </div>
-  </header>
+  <div class="layout" id="top">
 
-  <main id="main">
-
-    <!-- Hero -->
-    <section class="hero" id="top">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="aurora aurora-1"></div>
-        <div class="aurora aurora-2"></div>
-        <div class="aurora aurora-3"></div>
-        <div class="hero-grid"></div>
-        <div class="hero-grid hero-grid--glow"></div>
-      </div>
-
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="hero-badge anim-in" style="--i:0"><span class="pulse" aria-hidden="true"></span>Module Lead at Mphasis · Bangalore, India</p>
-          <h1 class="hero-title anim-in" style="--i:1">Vishnu <span class="grad-text">Muralikrishnan</span></h1>
-          <p class="hero-role anim-in" style="--i:2">
-            <span class="role-static">SharePoint &amp; Microsoft 365 Developer</span>
-            <span class="role-typed" aria-hidden="true"><span class="typed-prefix">&gt; building</span> <span class="typed" data-words="SPFx solutions with React|Power Apps &amp; Power Automate|Nintex Automation Cloud workflows|Azure &amp; Microsoft Graph integrations|SharePoint Online migrations">SPFx solutions with React</span><span class="caret"></span></span>
-          </p>
-          <p class="hero-lead anim-in" style="--i:3">
-            9.5+ years designing, building and supporting enterprise business solutions on SharePoint Online, SPFx, Power Platform, Nintex and Azure — from on-premises SharePoint 2013 to cloud-native Microsoft&nbsp;365.
-          </p>
-          <div class="hero-cta anim-in" style="--i:4">
-            <a class="btn btn-primary" href="#experience">View my experience <svg class="i"><use href="#i-arrow-right"/></svg></a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
-            <div class="hero-social">
-              <a class="icon-btn" href="https://www.linkedin.com/in/vishnumuralikrishnan" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="i"><use href="#i-linkedin"/></svg></a>
-              <a class="icon-btn" href="mailto:vishnu.m70@gmail.com" aria-label="Send an email"><svg class="i"><use href="#i-mail"/></svg></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual anim-in" style="--i:2">
-          <div class="portrait">
-            <div class="portrait-glow" aria-hidden="true"></div>
-            <div class="portrait-ring" aria-hidden="true"></div>
-            <img src="assets/img/profile.webp" width="500" height="500" alt="Portrait of Vishnu Muralikrishnan" fetchpriority="high">
-            <span class="float-chip chip-1" aria-hidden="true"><i style="--c:var(--a2)"></i>SPFx · React</span>
-            <span class="float-chip chip-2" aria-hidden="true"><i style="--c:var(--a3)"></i>Power Automate</span>
-            <span class="float-chip chip-3" aria-hidden="true"><i style="--c:var(--a1)"></i>Nintex</span>
-            <span class="float-chip chip-4" aria-hidden="true"><i style="--c:#38bdf8"></i>Azure · Graph</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <dl class="stats anim-in" style="--i:5">
-          <div class="stat">
-            <dt>Years of experience</dt>
-            <dd><span data-count="9.5" data-decimals="1">9.5</span><span class="stat-suffix">+</span></dd>
-          </div>
-          <div class="stat">
-            <dt>SharePoint apps supported</dt>
-            <dd><span data-count="50">50</span><span class="stat-suffix">+</span></dd>
-          </div>
-          <div class="stat">
-            <dt>Enterprise projects</dt>
-            <dd><span data-count="15">15</span><span class="stat-suffix">+</span></dd>
-          </div>
-          <div class="stat">
-            <dt>Microsoft certifications</dt>
-            <dd><span data-count="4">4</span></dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- Tech marquee -->
-    <div class="marquee" aria-label="Technologies I work with">
-      <div class="marquee-track">
-        <ul class="marquee-list">
-          <li>SharePoint Online</li>
-          <li>SharePoint Framework</li>
-          <li>React</li>
-          <li>TypeScript</li>
-          <li>Power Apps</li>
-          <li>Power Automate</li>
-          <li>Dataverse</li>
-          <li>Nintex Automation Cloud</li>
-          <li>Nintex Forms</li>
-          <li>Azure Functions</li>
-          <li>Microsoft Graph</li>
-          <li>Azure DevOps</li>
-          <li>PnP PowerShell</li>
-          <li>ShareGate</li>
-          <li>C# .NET</li>
-          <li>SharePoint 2013 / 2016</li>
+    <!-- Profile panel -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <h1 class="name"><a href="#top">Vishnu Muralikrishnan</a></h1>
+        <p class="role">SharePoint Developer <span class="role-sep">·</span> Module Lead</p>
+        <p class="tagline">9.5+ years designing, building and supporting enterprise solutions on SharePoint Online, SPFx, Power Platform, Nintex and Azure.</p>
+        <ul class="meta">
+          <li><svg class="i"><use href="#i-briefcase"/></svg>Mphasis</li>
+          <li><svg class="i"><use href="#i-pin"/></svg>Bangalore, India</li>
         </ul>
+
+        <nav class="toc" aria-label="Sections">
+          <ul>
+            <li><a href="#summary"><span class="toc-line" aria-hidden="true"></span>Summary</a></li>
+            <li><a href="#experience"><span class="toc-line" aria-hidden="true"></span>Experience</a></li>
+            <li><a href="#work"><span class="toc-line" aria-hidden="true"></span>Selected Work</a></li>
+            <li><a href="#skills"><span class="toc-line" aria-hidden="true"></span>Skills</a></li>
+            <li><a href="#certifications"><span class="toc-line" aria-hidden="true"></span>Certifications</a></li>
+            <li><a href="#education"><span class="toc-line" aria-hidden="true"></span>Education</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
 
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-copy">
-            <header class="section-head" data-reveal>
-              <span class="eyebrow"><span class="eyebrow-num">01</span>About</span>
-              <h2 class="section-title">Turning business processes into dependable Microsoft&nbsp;365 solutions.</h2>
-            </header>
-            <div class="prose" data-reveal>
-              <p>I'm a SharePoint Developer with more than nine and a half years of experience designing, developing and supporting enterprise applications on <strong>SharePoint Online, SPFx, Power Platform, Nintex Automation Cloud and Azure</strong>.</p>
-              <p>My work covers the whole lifecycle: gathering requirements with business stakeholders, designing the technical solution, building it, shipping it through CI/CD and supporting it in production. I started out building SharePoint 2013 apps in C#. Today I lead work that modernizes workflows, migrates platforms to SharePoint Online and connects Microsoft&nbsp;365 with Azure and Microsoft Graph.</p>
-            </div>
-          </div>
-
-          <aside class="facts card" data-reveal aria-label="Quick facts">
-            <dl>
-              <div class="fact"><dt><svg class="i"><use href="#i-map-pin"/></svg>Based in</dt><dd>Bangalore, India</dd></div>
-              <div class="fact"><dt><svg class="i"><use href="#i-briefcase"/></svg>Currently</dt><dd>Module Lead, Mphasis</dd></div>
-              <div class="fact"><dt><svg class="i"><use href="#i-clock"/></svg>Experience</dt><dd>9.5+ years · 5 organizations</dd></div>
-              <div class="fact"><dt><svg class="i"><use href="#i-cap"/></svg>Education</dt><dd>B.E. Computer Science &amp; Engineering</dd></div>
-              <div class="fact"><dt><svg class="i"><use href="#i-languages"/></svg>Languages</dt><dd>English (C2) · German (A1)</dd></div>
-            </dl>
-          </aside>
-        </div>
-
-        <div class="pillars" data-stagger>
-          <article class="pillar card spot" data-reveal style="--c:var(--a1)">
-            <span class="tile-icon"><svg class="i"><use href="#i-route"/></svg></span>
-            <h3>End-to-end delivery</h3>
-            <p>Requirements, solution design, development, testing, deployment and production support, owned from start to finish.</p>
-          </article>
-          <article class="pillar card spot" data-reveal style="--c:var(--a2)">
-            <span class="tile-icon"><svg class="i"><use href="#i-cloud-up"/></svg></span>
-            <h3>Modernization &amp; migration</h3>
-            <p>SharePoint 2013/2016 to SharePoint Online, and Nintex for Office 365 to Nintex Automation Cloud.</p>
-          </article>
-          <article class="pillar card spot" data-reveal style="--c:var(--a3)">
-            <span class="tile-icon"><svg class="i"><use href="#i-users"/></svg></span>
-            <h3>Technical leadership</h3>
-            <p>Team coordination, application transitions and System Understanding Documents as Technical Lead and Module Lead.</p>
-          </article>
-          <article class="pillar card spot" data-reveal style="--c:#38bdf8">
-            <span class="tile-icon"><svg class="i"><use href="#i-zap"/></svg></span>
-            <h3>Automation &amp; integration</h3>
-            <p>Power Automate, Microsoft Graph, SharePoint REST, Azure Functions and PnP PowerShell wired into real business processes.</p>
-          </article>
+      <div class="sidebar-bottom">
+        <ul class="contact-links">
+          <li><a href="mailto:vishnu.m70@gmail.com"><svg class="i"><use href="#i-mail"/></svg>vishnu.m70@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/vishnumuralikrishnan" target="_blank" rel="noopener"><svg class="i"><use href="#i-linkedin"/></svg>linkedin.com/in/vishnumuralikrishnan</a></li>
+        </ul>
+        <div class="tools">
+          <button class="tool-btn" type="button" data-print><svg class="i"><use href="#i-printer"/></svg>Save as PDF</button>
+          <button class="tool-btn tool-btn--icon theme-toggle" type="button" aria-label="Switch to dark theme">
+            <svg class="i i-moon"><use href="#i-moon"/></svg>
+            <svg class="i i-sun"><use href="#i-sun"/></svg>
+          </button>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <!-- Expertise -->
-    <section class="section" id="expertise">
-      <div class="container">
-        <header class="section-head" data-reveal>
-          <span class="eyebrow"><span class="eyebrow-num">02</span>Expertise</span>
-          <h2 class="section-title">A full-stack Microsoft&nbsp;365 toolkit</h2>
-          <p class="section-sub">The platforms and tools I use to design, build, ship and run business solutions, from the SharePoint front end to the Azure services behind it.</p>
-        </header>
+    <!-- Compact section bar for small screens -->
+    <nav class="mobile-nav" aria-label="Sections">
+      <ul class="mobile-nav-list">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Selected Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
 
-        <div class="skills-grid" data-stagger>
-          <article class="skill-card card spot" data-reveal style="--c:var(--a2)">
-            <span class="tile-icon"><svg class="i"><use href="#i-layers"/></svg></span>
-            <h3>SharePoint &amp; SPFx</h3>
-            <p>Custom web parts and modern business applications on SharePoint Online, built with React and TypeScript.</p>
-            <ul class="chips">
-              <li>SharePoint Online</li><li>SPFx</li><li>React</li><li>TypeScript</li><li>SharePoint REST</li><li>SharePoint 2013 / 2016</li><li>CSOM / SSOM</li>
-            </ul>
-          </article>
-          <article class="skill-card card spot" data-reveal style="--c:var(--a3)">
-            <span class="tile-icon"><svg class="i"><use href="#i-zap"/></svg></span>
-            <h3>Power Platform</h3>
-            <p>Canvas apps and cloud flows that automate approvals, notifications and data synchronization.</p>
-            <ul class="chips">
-              <li>Power Apps</li><li>Power Automate</li><li>Dataverse</li><li>Dataflows</li>
-            </ul>
-          </article>
-          <article class="skill-card card spot" data-reveal style="--c:var(--a1)">
-            <span class="tile-icon"><svg class="i"><use href="#i-workflow"/></svg></span>
-            <h3>Nintex &amp; Forms</h3>
-            <p>Workflow modernization from Nintex for Office 365 to Nintex Automation Cloud, with redesigned forms.</p>
-            <ul class="chips">
-              <li>Nintex Automation Cloud</li><li>Nintex for Office 365</li><li>Nintex Forms</li><li>InfoPath</li>
-            </ul>
-          </article>
-          <article class="skill-card card spot" data-reveal style="--c:#38bdf8">
-            <span class="tile-icon"><svg class="i"><use href="#i-cloud"/></svg></span>
-            <h3>Azure &amp; Integration</h3>
-            <p>Integrations that connect Microsoft&nbsp;365 to Azure services, APIs and line-of-business systems.</p>
-            <ul class="chips">
-              <li>Azure</li><li>Azure Functions</li><li>Azure App Registrations</li><li>Microsoft Graph API</li>
-            </ul>
-          </article>
-          <article class="skill-card card spot" data-reveal style="--c:#34d399">
-            <span class="tile-icon"><svg class="i"><use href="#i-cloud-up"/></svg></span>
-            <h3>Migration &amp; Scripting</h3>
-            <p>SharePoint 2013/2016 to SharePoint Online migrations covering documents, lists, libraries and application data.</p>
-            <ul class="chips">
-              <li>ShareGate</li><li>PowerShell</li><li>PnP PowerShell</li><li>Content migration</li>
-            </ul>
-          </article>
-          <article class="skill-card card spot" data-reveal style="--c:#f472b6">
-            <span class="tile-icon"><svg class="i"><use href="#i-branch"/></svg></span>
-            <h3>DevOps &amp; Engineering</h3>
-            <p>CI/CD pipelines for SPFx, plus .NET and SQL engineering from the on-premises SharePoint years.</p>
-            <ul class="chips">
-              <li>Azure DevOps</li><li>CI/CD Pipelines</li><li>C# .NET</li><li>ASP.NET</li><li>JavaScript</li><li>SQL / MySQL</li>
-            </ul>
-          </article>
+    <main class="content" id="main">
+
+      <!-- Summary -->
+      <section class="section" id="summary" aria-labelledby="summary-title">
+        <h2 class="section-title" id="summary-title">Professional Summary</h2>
+        <div class="prose reveal">
+          <p>SharePoint Developer with more than nine and a half years of experience delivering enterprise applications on <strong>Microsoft SharePoint Online, SharePoint Framework (SPFx), Power Platform, Nintex Automation Cloud and Azure</strong>.</p>
+          <p>Experienced across the full software development lifecycle: gathering business requirements, designing technical solutions, building and deploying through CI/CD, and supporting applications in production. Delivered SharePoint 2013/2016 to SharePoint Online migrations and modernized Nintex workflows on Nintex Automation Cloud, working as Technical Lead and Module Lead for enterprise delivery teams.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Experience -->
-    <section class="section" id="experience">
-      <div class="container">
-        <header class="section-head" data-reveal>
-          <span class="eyebrow"><span class="eyebrow-num">03</span>Experience</span>
-          <h2 class="section-title">Nearly a decade of building on SharePoint</h2>
-          <p class="section-sub">From on-premises SharePoint 2013 to cloud-native Microsoft&nbsp;365, across five organizations in Bangalore and Chennai.</p>
-        </header>
+        <dl class="highlights reveal">
+          <div><dt>Years of experience</dt><dd>9.5+</dd></div>
+          <div><dt>Organizations</dt><dd>5</dd></div>
+          <div><dt>SharePoint applications supported</dt><dd>50+</dd></div>
+          <div><dt>Microsoft certifications</dt><dd>4</dd></div>
+        </dl>
 
-        <ol class="journey" data-reveal aria-label="Career at a glance">
-          <li><a href="#role-ltim"><span class="j-year">2016</span><span class="j-dot" aria-hidden="true"></span><span class="j-title">On-prem foundations</span><span class="j-text">SharePoint 2013, CSOM, C# &amp; ASP.NET</span><span class="j-org">LTIMindtree</span></a></li>
-          <li><a href="#role-cognizant"><span class="j-year">2019</span><span class="j-dot" aria-hidden="true"></span><span class="j-title">Into SPFx</span><span class="j-text">SPFx web parts, SharePoint–SQL integration</span><span class="j-org">Cognizant</span></a></li>
-          <li><a href="#role-accenture"><span class="j-year">2020</span><span class="j-dot" aria-hidden="true"></span><span class="j-title">Power Platform</span><span class="j-text">Power Apps, SPFx with React, SPO migration</span><span class="j-org">Accenture</span></a></li>
-          <li><a href="#role-sopra"><span class="j-year">2022</span><span class="j-dot" aria-hidden="true"></span><span class="j-title">Technical lead</span><span class="j-text">Nintex modernization, Dataverse, CI/CD</span><span class="j-org">Sopra Steria</span></a></li>
-          <li><a href="#role-mphasis"><span class="j-year">2026</span><span class="j-dot" aria-hidden="true"></span><span class="j-title">Cloud integration</span><span class="j-text">Azure Functions, Microsoft Graph, DevOps</span><span class="j-org">Mphasis</span></a></li>
+        <h3 class="sub-title reveal">Core strengths</h3>
+        <ul class="strengths reveal">
+          <li><svg class="i"><use href="#i-check"/></svg>Solution design and full-lifecycle delivery</li>
+          <li><svg class="i"><use href="#i-check"/></svg>SPFx development with React and TypeScript</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Power Apps and Power Automate solutions</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Nintex Automation Cloud modernization</li>
+          <li><svg class="i"><use href="#i-check"/></svg>SharePoint 2013/2016 to SharePoint Online migration</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Azure, Microsoft Graph and DevOps CI/CD</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Technical leadership and team coordination</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Stakeholder and requirements management</li>
+        </ul>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <h2 class="section-title" id="experience-title">Experience</h2>
+
+        <ol class="progression reveal" aria-label="Career progression">
+          <li><span class="prog-year">2016</span><span class="prog-dot" aria-hidden="true"></span><span class="prog-role">Software Engineer</span></li>
+          <li><span class="prog-year">2019</span><span class="prog-dot" aria-hidden="true"></span><span class="prog-role">Programmer Analyst</span></li>
+          <li><span class="prog-year">2020</span><span class="prog-dot" aria-hidden="true"></span><span class="prog-role">Application Development Analyst</span></li>
+          <li><span class="prog-year">2022</span><span class="prog-dot" aria-hidden="true"></span><span class="prog-role">Technical Lead</span></li>
+          <li><span class="prog-year">2026</span><span class="prog-dot" aria-hidden="true"></span><span class="prog-role">Module Lead</span></li>
         </ol>
 
-        <div class="timeline">
-          <div class="timeline-track" aria-hidden="true"><div class="timeline-fill"></div></div>
-
+        <ol class="jobs">
           <!-- Mphasis -->
-          <article class="tl-item" id="role-mphasis">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <div class="role card spot" data-reveal>
-              <div class="role-head">
-                <span class="role-mono" aria-hidden="true">Mp</span>
-                <div class="role-main">
-                  <h3 class="role-title">SharePoint Developer <span class="role-level">Module Lead</span></h3>
-                  <p class="role-org">Mphasis <span class="sep">·</span> Bangalore, India</p>
-                </div>
-                <div class="role-meta">
-                  <span class="badge-current"><span class="pulse" aria-hidden="true"></span>Current</span>
-                  <span class="role-dates">Feb 2026 — Present</span>
-                  <span class="role-dur" data-from="2026-02-16">8 mos</span>
-                </div>
-              </div>
-              <ul class="role-points">
-                <li>Build and enhance <strong>Power Automate</strong> cloud flows for business process automation, approvals, notifications and data synchronization.</li>
-                <li>Develop <strong>SPFx solutions with React</strong> for customized SharePoint Online functionality and modern business applications.</li>
-                <li>Implement <strong>Azure-based integrations</strong> using Azure services, Azure Functions, APIs and application integrations.</li>
-                <li>Develop and maintain <strong>Azure DevOps CI/CD pipelines</strong> for SPFx solutions, and automate with Microsoft Graph, SharePoint REST APIs, PowerShell and PnP PowerShell.</li>
-                <li>Partner with business stakeholders and technical teams from requirements and solution design through testing, deployment and production support.</li>
-              </ul>
-              <div class="role-foot">
-                <div class="role-group">
-                  <span class="role-label">Stack</span>
-                  <ul class="chips chips--sm">
-                    <li>SharePoint Online</li><li>Microsoft 365</li><li>Power Apps</li><li>Power Automate</li><li>SPFx</li><li>React</li><li>Azure</li><li>Azure Functions</li><li>Microsoft Graph</li><li>PowerShell</li><li>Azure DevOps</li><li>CI/CD</li>
-                  </ul>
-                </div>
-              </div>
+          <li class="job reveal">
+            <div class="job-when">
+              <span class="job-dates">Feb 2026 — Present</span>
+              <span class="job-dur" data-from="2026-02-16">8 mos</span>
             </div>
-          </article>
+            <div class="job-body">
+              <h3 class="job-title">SharePoint Developer <span class="job-level">Module Lead</span></h3>
+              <p class="job-org">Mphasis <span class="dot">·</span> Bangalore, India</p>
+              <p class="job-summary">Delivering SharePoint Online, SPFx and Power Platform solutions with Azure integration and automated deployment.</p>
+              <ul class="job-points">
+                <li>Develop and enhance Power Automate cloud flows for business process automation, approvals, notifications and data synchronization.</li>
+                <li>Develop SPFx solutions using React for customized SharePoint Online functionality and modern business applications.</li>
+                <li>Implement Azure-based integrations using Azure services, Azure Functions, APIs and application integrations.</li>
+                <li>Develop and maintain Azure DevOps CI/CD pipelines for SPFx solutions, working with Microsoft Graph API, SharePoint REST APIs, PowerShell and PnP PowerShell for automation and integration.</li>
+                <li>Collaborate with business stakeholders and technical teams across requirement gathering, solution design, development, testing, deployment and production support.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>SharePoint Online</li><li>Microsoft 365</li><li>SPFx</li><li>React</li><li>Power Apps</li><li>Power Automate</li><li>Azure Functions</li><li>Microsoft Graph</li><li>PnP PowerShell</li><li>Azure DevOps</li>
+              </ul>
+            </div>
+          </li>
 
           <!-- Sopra Steria -->
-          <article class="tl-item" id="role-sopra">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <div class="role card spot" data-reveal>
-              <div class="role-head">
-                <span class="role-mono" aria-hidden="true">SS</span>
-                <div class="role-main">
-                  <h3 class="role-title">SharePoint Developer <span class="role-level">Technical Lead</span></h3>
-                  <p class="role-org">Sopra Steria <span class="sep">·</span> Bangalore, India</p>
-                </div>
-                <div class="role-meta">
-                  <span class="role-dates">Feb 2022 — Sep 2025</span>
-                  <span class="role-dur" data-from="2022-02-07" data-to="2025-09-19">3 yrs 7 mos</span>
-                </div>
-              </div>
-              <ul class="role-points">
-                <li>Led development and enhancement of <strong>enterprise SharePoint and Power Platform applications</strong>, covering requirement gathering, solution design, development and technical documentation.</li>
-                <li>Built <strong>SPFx solutions in React and TypeScript</strong> for SharePoint Online and set up <strong>CI/CD pipelines in Azure DevOps</strong> for deployment.</li>
-                <li>Delivered <strong>Power Apps canvas apps</strong> and <strong>Power Automate</strong> workflows on SharePoint and Dataverse to automate business processes, approvals and notifications.</li>
-                <li>Migrated Nintex workflows from <strong>Nintex for Office 365 to Nintex Automation Cloud</strong>, redesigning the workflows and building new Nintex Forms for the modernized processes.</li>
-                <li>Migrated <strong>SharePoint 2013/2016 to SharePoint Online</strong>, including documents, lists, libraries and application data.</li>
-                <li>Used Azure app registrations, Microsoft Graph API and PowerShell for integration and automation, and supported <strong>50+ SharePoint applications</strong>.</li>
-                <li>As Technical Lead, coordinated the team, drove application transition, authored System Understanding Documents and worked with stakeholders through development, deployment and support.</li>
-              </ul>
-              <div class="role-foot">
-                <div class="role-group">
-                  <span class="role-label">Key projects</span>
-                  <ul class="chips chips--accent">
-                    <li>Inventory Management</li><li>Deviation Management System</li><li>SharePoint 2013 → Online Migration</li><li>Power Apps Applications</li>
-                  </ul>
-                </div>
-                <div class="role-group">
-                  <span class="role-label">Stack</span>
-                  <ul class="chips chips--sm">
-                    <li>SharePoint Online / O365</li><li>SharePoint 2013 / 2016</li><li>SPFx</li><li>Power Apps</li><li>Power Automate</li><li>Dataverse</li><li>Dataflows</li><li>Nintex Workflow</li><li>Nintex Forms</li><li>InfoPath</li><li>Azure Apps</li><li>Graph API</li><li>PowerShell</li>
-                  </ul>
-                </div>
-              </div>
+          <li class="job reveal">
+            <div class="job-when">
+              <span class="job-dates">Feb 2022 — Sep 2025</span>
+              <span class="job-dur" data-from="2022-02-07" data-to="2025-09-19">3 yrs 7 mos</span>
             </div>
-          </article>
+            <div class="job-body">
+              <h3 class="job-title">SharePoint Developer <span class="job-level">Technical Lead</span></h3>
+              <p class="job-org">Sopra Steria <span class="dot">·</span> Bangalore, India</p>
+              <p class="job-summary">Technical Lead for enterprise SharePoint and Power Platform applications, supporting a portfolio of 50+ SharePoint applications through migration and modernization.</p>
+              <ul class="job-points">
+                <li>Led the development and enhancement of enterprise SharePoint and Power Platform applications, including requirement gathering, solution design, development and technical documentation.</li>
+                <li>Developed SPFx solutions using React and TypeScript for SharePoint Online and implemented CI/CD pipelines in Azure DevOps for deployment.</li>
+                <li>Built Power Apps canvas applications and Power Automate workflows on SharePoint and Dataverse to automate business processes, approvals and notifications.</li>
+                <li>Migrated Nintex workflows from Nintex for Office 365 to Nintex Automation Cloud, redesigning workflows and creating Nintex Forms for the modernized processes.</li>
+                <li>Migrated SharePoint 2013/2016 to SharePoint Online, including documents, lists, libraries and application-related data.</li>
+                <li>Used Azure app registrations, Microsoft Graph API and PowerShell for integration and automation; supported 50+ SharePoint applications.</li>
+                <li>Coordinated the team as Technical Lead, supported application transition, prepared System Understanding Documents and worked with stakeholders through development, deployment and support.</li>
+              </ul>
+              <p class="job-projects"><span>Key projects</span>Inventory Management · Deviation Management System · SharePoint 2013 to SharePoint Online Migration · Power Apps applications</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>SharePoint Online</li><li>SharePoint 2013 / 2016</li><li>SPFx</li><li>React</li><li>TypeScript</li><li>Power Apps</li><li>Power Automate</li><li>Dataverse</li><li>Nintex Automation Cloud</li><li>Nintex Forms</li><li>Azure DevOps</li><li>Microsoft Graph</li><li>PowerShell</li>
+              </ul>
+            </div>
+          </li>
 
           <!-- Accenture -->
-          <article class="tl-item" id="role-accenture">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <div class="role card spot" data-reveal>
-              <div class="role-head">
-                <span class="role-mono" aria-hidden="true">Ac</span>
-                <div class="role-main">
-                  <h3 class="role-title">Application Development Analyst</h3>
-                  <p class="role-org">Accenture <span class="sep">·</span> Bangalore, India</p>
-                </div>
-                <div class="role-meta">
-                  <span class="role-dates">Apr 2020 — Feb 2022</span>
-                  <span class="role-dur" data-from="2020-04-13" data-to="2022-02-06">1 yr 10 mos</span>
-                </div>
-              </div>
-              <ul class="role-points">
-                <li>Played a key role in developing and enhancing <strong>multiple applications from scratch</strong>.</li>
-                <li>Built <strong>Power Apps canvas apps</strong> and <strong>SPFx applications with React</strong> on SharePoint Online.</li>
-                <li>Executed data migration from <strong>SharePoint 2013 to SharePoint Online</strong>.</li>
-                <li>Authored System Understanding Documents during full project transition phases.</li>
-                <li>Resolved user issues within agreed SLAs to keep operations running smoothly.</li>
-              </ul>
-              <div class="role-foot">
-                <div class="role-group">
-                  <span class="role-label">Key projects</span>
-                  <ul class="chips chips--accent">
-                    <li>Document Management (Global Application)</li><li>Seat Booking</li><li>Covid Assessment</li>
-                  </ul>
-                </div>
-                <div class="role-group">
-                  <span class="role-label">Stack</span>
-                  <ul class="chips chips--sm">
-                    <li>SharePoint Online / O365</li><li>SharePoint 2013</li><li>Power Apps</li><li>Power Automate</li><li>SPFx</li><li>Nintex Forms</li>
-                  </ul>
-                </div>
-              </div>
+          <li class="job reveal">
+            <div class="job-when">
+              <span class="job-dates">Apr 2020 — Feb 2022</span>
+              <span class="job-dur" data-from="2020-04-13" data-to="2022-02-06">1 yr 10 mos</span>
             </div>
-          </article>
+            <div class="job-body">
+              <h3 class="job-title">Application Development Analyst</h3>
+              <p class="job-org">Accenture <span class="dot">·</span> Bangalore, India</p>
+              <p class="job-summary">Developer on SharePoint Online and Power Platform applications, including a globally used document management application.</p>
+              <ul class="job-points">
+                <li>Played a key role in developing and enhancing multiple applications from scratch.</li>
+                <li>Built Power Apps canvas apps and SPFx applications using React on SharePoint Online.</li>
+                <li>Executed data migration from SharePoint 2013 to SharePoint Online.</li>
+                <li>Created System Understanding Documents during full project transition phases.</li>
+                <li>Resolved user issues within agreed SLAs to ensure smooth operations.</li>
+              </ul>
+              <p class="job-projects"><span>Key projects</span>Document Management (Global Application) · Seat Booking · Covid Assessment</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>SharePoint Online</li><li>SharePoint 2013</li><li>SPFx</li><li>React</li><li>Power Apps</li><li>Power Automate</li><li>Nintex Forms</li>
+              </ul>
+            </div>
+          </li>
 
           <!-- Cognizant -->
-          <article class="tl-item" id="role-cognizant">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <div class="role card spot" data-reveal>
-              <div class="role-head">
-                <span class="role-mono" aria-hidden="true">Co</span>
-                <div class="role-main">
-                  <h3 class="role-title">Programmer Analyst <span class="role-level">SharePoint Developer</span></h3>
-                  <p class="role-org">Cognizant Technology Solutions <span class="sep">·</span> Bangalore, India <span class="sep">·</span> Client: Capital One</p>
-                </div>
-                <div class="role-meta">
-                  <span class="role-dates">Mar 2019 — Apr 2020</span>
-                  <span class="role-dur" data-from="2019-03-22" data-to="2020-04-06">1 yr 1 mo</span>
-                </div>
-              </div>
-              <ul class="role-points">
-                <li>Developed, maintained and enhanced multiple <strong>Capital One applications and sites</strong>.</li>
-                <li>Used SharePoint lists, libraries and <strong>SQL databases</strong> for data storage and retrieval in on-premises applications.</li>
-                <li>Developed <strong>SPFx web parts</strong>, including an innovation application and document CRUD operations.</li>
-                <li>Integrated and deployed SPFx web parts into SharePoint pages.</li>
-                <li>Extended application functionality through SharePoint–SQL integration.</li>
-              </ul>
-              <div class="role-foot">
-                <div class="role-group">
-                  <span class="role-label">Key projects</span>
-                  <ul class="chips chips--accent">
-                    <li>Gift Cards</li><li>Legal Compliance Meeting</li><li>TechOps · AWS S3 Innovation</li>
-                  </ul>
-                </div>
-                <div class="role-group">
-                  <span class="role-label">Stack</span>
-                  <ul class="chips chips--sm">
-                    <li>SharePoint Online / O365</li><li>SharePoint 2013 (SSOM)</li><li>SPFx</li><li>C# .NET</li><li>JavaScript</li><li>MySQL</li>
-                  </ul>
-                </div>
-              </div>
+          <li class="job reveal">
+            <div class="job-when">
+              <span class="job-dates">Mar 2019 — Apr 2020</span>
+              <span class="job-dur" data-from="2019-03-22" data-to="2020-04-06">1 yr 1 mo</span>
             </div>
-          </article>
+            <div class="job-body">
+              <h3 class="job-title">Programmer Analyst <span class="job-level">SharePoint Developer</span></h3>
+              <p class="job-org">Cognizant Technology Solutions <span class="dot">·</span> Bangalore, India <span class="dot">·</span> Client: Capital One</p>
+              <p class="job-summary">SharePoint Developer on Capital One applications and sites, across on-premises SharePoint 2013 and SharePoint Online.</p>
+              <ul class="job-points">
+                <li>Developed, maintained and enhanced multiple Capital One applications and sites.</li>
+                <li>Used SharePoint lists, libraries and SQL databases for data storage and retrieval in on-premises applications.</li>
+                <li>Developed SPFx web parts, including an innovation application and document CRUD operations.</li>
+                <li>Integrated and deployed SPFx web parts into SharePoint pages.</li>
+                <li>Enhanced application functionality through SharePoint–SQL integration.</li>
+              </ul>
+              <p class="job-projects"><span>Key projects</span>Gift Cards · Legal Compliance Meeting · TechOps – AWS S3 Innovation</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>SharePoint Online</li><li>SharePoint 2013 (SSOM)</li><li>SPFx</li><li>C# .NET</li><li>JavaScript</li><li>MySQL</li>
+              </ul>
+            </div>
+          </li>
 
           <!-- LTIMindtree -->
-          <article class="tl-item" id="role-ltim">
-            <span class="tl-dot" aria-hidden="true"></span>
-            <div class="role card spot" data-reveal>
-              <div class="role-head">
-                <span class="role-mono" aria-hidden="true">LT</span>
-                <div class="role-main">
-                  <h3 class="role-title">Software Engineer</h3>
-                  <p class="role-org">LTIMindtree (Larsen &amp; Toubro Infotech) <span class="sep">·</span> Chennai, India</p>
-                </div>
-                <div class="role-meta">
-                  <span class="role-dates">Dec 2016 — Mar 2019</span>
-                  <span class="role-dur" data-from="2016-12-13" data-to="2019-03-04">2 yrs 3 mos</span>
-                </div>
-              </div>
-              <ul class="role-points">
-                <li>Developed many of the application's screens using the <strong>SharePoint 2013 client-side object model (CSOM)</strong>.</li>
-                <li>Built apps on the <strong>provider-hosted app model</strong> and deployed them to the server.</li>
-                <li>Used <strong>REST APIs</strong> to fetch data.</li>
-                <li>Implemented form submission with <strong>approval functionality in ASP.NET</strong>.</li>
-                <li>Wrote a <strong>Windows service</strong> that generated reports and sent scheduled emails.</li>
+          <li class="job reveal">
+            <div class="job-when">
+              <span class="job-dates">Dec 2016 — Mar 2019</span>
+              <span class="job-dur" data-from="2016-12-13" data-to="2019-03-04">2 yrs 3 mos</span>
+            </div>
+            <div class="job-body">
+              <h3 class="job-title">Software Engineer</h3>
+              <p class="job-org">LTIMindtree (Larsen &amp; Toubro Infotech) <span class="dot">·</span> Chennai, India</p>
+              <p class="job-summary">Built SharePoint 2013 business applications using CSOM, ASP.NET and the provider-hosted app model.</p>
+              <ul class="job-points">
+                <li>Played a key role in developing many of the application's screens using SharePoint 2013 CSOM.</li>
+                <li>Developed apps using the provider-hosted app model and deployed them to the server.</li>
+                <li>Used REST APIs to fetch data.</li>
+                <li>Implemented form submission with approval functionality in ASP.NET.</li>
+                <li>Developed a Windows service for scheduled report generation and email notifications.</li>
               </ul>
-              <div class="role-foot">
-                <div class="role-group">
-                  <span class="role-label">Key projects</span>
-                  <ul class="chips chips--accent">
-                    <li>Visitor Management System</li><li>Weapon Management System</li><li>Security Investigation System</li><li>Community Apps</li><li>Work Permit Audit</li>
-                  </ul>
-                </div>
-                <div class="role-group">
-                  <span class="role-label">Stack</span>
-                  <ul class="chips chips--sm">
-                    <li>SharePoint 2013 (CSOM)</li><li>C# .NET</li><li>ASP.NET</li><li>JavaScript</li><li>REST API</li><li>Windows Services</li>
-                  </ul>
-                </div>
-              </div>
+              <p class="job-projects"><span>Key projects</span>Visitor Management System · Weapon Management System · Security Investigation System · Community Apps · Work Permit Audit</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>SharePoint 2013 (CSOM)</li><li>C# .NET</li><li>ASP.NET</li><li>JavaScript</li><li>REST API</li><li>Windows Services</li>
+              </ul>
             </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Selected work -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <h2 class="section-title" id="work-title">Selected Work</h2>
+        <div class="work-grid">
+          <article class="work reveal">
+            <p class="work-org">Sopra Steria</p>
+            <h3 class="work-title">Nintex workflow modernization</h3>
+            <p class="work-desc">Migrated business workflows from Nintex for Office 365 to Nintex Automation Cloud, redesigning each workflow for the new platform and building Nintex Forms to support the modernized processes.</p>
+            <ul class="tags"><li>Nintex Automation Cloud</li><li>Nintex Forms</li><li>SharePoint Online</li></ul>
+          </article>
+          <article class="work reveal">
+            <p class="work-org">Sopra Steria · Accenture</p>
+            <h3 class="work-title">SharePoint Online migration</h3>
+            <p class="work-desc">Migrated SharePoint 2013 and 2016 sites to SharePoint Online, covering documents, lists, libraries and application-related data.</p>
+            <ul class="tags"><li>SharePoint 2013 / 2016</li><li>SharePoint Online</li><li>ShareGate</li><li>PowerShell</li></ul>
+          </article>
+          <article class="work reveal">
+            <p class="work-org">Sopra Steria · Accenture · Mphasis</p>
+            <h3 class="work-title">Power Platform business applications</h3>
+            <p class="work-desc">Power Apps canvas apps and Power Automate cloud flows on SharePoint and Dataverse that automate business processes, approvals, notifications and data synchronization.</p>
+            <ul class="tags"><li>Power Apps</li><li>Power Automate</li><li>Dataverse</li><li>SharePoint</li></ul>
+          </article>
+          <article class="work reveal">
+            <p class="work-org">Mphasis · Sopra Steria</p>
+            <h3 class="work-title">SPFx solutions with CI/CD</h3>
+            <p class="work-desc">SharePoint Framework solutions in React and TypeScript for SharePoint Online, built and deployed through Azure DevOps CI/CD pipelines.</p>
+            <ul class="tags"><li>SPFx</li><li>React</li><li>TypeScript</li><li>Azure DevOps</li></ul>
+          </article>
+          <article class="work reveal">
+            <p class="work-org">Mphasis · Sopra Steria</p>
+            <h3 class="work-title">Azure and Microsoft Graph integration</h3>
+            <p class="work-desc">Integrations and automation using Azure services, Azure Functions, app registrations, Microsoft Graph, SharePoint REST APIs and PnP PowerShell.</p>
+            <ul class="tags"><li>Azure Functions</li><li>Microsoft Graph</li><li>SharePoint REST</li><li>PnP PowerShell</li></ul>
+          </article>
+          <article class="work reveal">
+            <p class="work-org">Cognizant · Client: Capital One</p>
+            <h3 class="work-title">Capital One applications</h3>
+            <p class="work-desc">SPFx web parts including an innovation application with document CRUD operations, alongside on-premises applications integrating SharePoint with SQL databases.</p>
+            <ul class="tags"><li>SPFx</li><li>SharePoint 2013</li><li>C# .NET</li><li>SQL</li></ul>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects -->
-    <section class="section" id="projects">
-      <div class="container">
-        <header class="section-head" data-reveal>
-          <span class="eyebrow"><span class="eyebrow-num">04</span>Projects</span>
-          <h2 class="section-title">Selected projects</h2>
-          <p class="section-sub">Business applications, modernization programs and migrations I've worked on across my roles.</p>
-        </header>
+      <!-- Skills -->
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <h2 class="section-title" id="skills-title">Skills</h2>
+        <dl class="skills reveal">
+          <div><dt>SharePoint</dt><dd>SharePoint Online · SharePoint 2013 / 2016 · SharePoint Framework (SPFx) · SharePoint REST API · CSOM / SSOM · Provider-hosted apps</dd></div>
+          <div><dt>Power Platform</dt><dd>Power Apps (Canvas) · Power Automate · Dataverse · Dataflows</dd></div>
+          <div><dt>Workflow &amp; Forms</dt><dd>Nintex Automation Cloud · Nintex for Office 365 · Nintex Forms · InfoPath</dd></div>
+          <div><dt>Cloud &amp; Integration</dt><dd>Microsoft Azure · Azure Functions · Azure App Registrations · Microsoft Graph API</dd></div>
+          <div><dt>Development</dt><dd>React · TypeScript · JavaScript · C# .NET · ASP.NET · SQL / MySQL</dd></div>
+          <div><dt>DevOps &amp; Automation</dt><dd>Azure DevOps · CI/CD Pipelines · PowerShell · PnP PowerShell</dd></div>
+          <div><dt>Migration</dt><dd>ShareGate · SharePoint 2013 / 2016 to SharePoint Online · Content and application data migration</dd></div>
+          <div><dt>Microsoft 365</dt><dd>Microsoft 365 · Microsoft Teams · Outlook</dd></div>
+        </dl>
+      </section>
 
-        <div class="filters" role="group" aria-label="Filter projects by organization" data-reveal>
-          <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" type="button" data-filter="sopra" aria-pressed="false">Sopra Steria</button>
-          <button class="filter" type="button" data-filter="accenture" aria-pressed="false">Accenture</button>
-          <button class="filter" type="button" data-filter="cognizant" aria-pressed="false">Cognizant</button>
-          <button class="filter" type="button" data-filter="ltim" aria-pressed="false">LTIMindtree</button>
-        </div>
-
-        <div class="projects-grid" data-stagger>
-          <article class="project project--featured card spot" data-org="sopra" data-reveal style="--c:var(--a1)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-workflow"/></svg></span>
-              <span class="project-org">Sopra Steria · 2022–2025</span>
-            </div>
-            <h3 class="project-title">Nintex workflow modernization</h3>
-            <p class="project-desc">Moved business workflows from Nintex for Office 365 to Nintex Automation Cloud. Each process was redesigned for the new platform rather than lifted and shifted, with new Nintex Forms built to support it.</p>
-            <ul class="chips chips--sm">
-              <li>Nintex Automation Cloud</li><li>Nintex Forms</li><li>Nintex for Office 365</li><li>SharePoint Online</li>
-            </ul>
-          </article>
-
-          <article class="project project--featured card spot" data-org="sopra accenture" data-reveal style="--c:var(--a2)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-cloud-up"/></svg></span>
-              <span class="project-org">Sopra Steria &amp; Accenture · 2020–2025</span>
-            </div>
-            <h3 class="project-title">SharePoint 2013/2016 → SharePoint Online migration</h3>
-            <p class="project-desc">Migrated on-premises SharePoint sites to SharePoint Online, covering documents, lists, libraries and application-related data, while keeping the business applications built on them running.</p>
-            <ul class="chips chips--sm">
-              <li>SharePoint 2013 / 2016</li><li>SharePoint Online</li><li>ShareGate</li><li>PowerShell</li>
-            </ul>
-          </article>
-
-          <article class="project card spot" data-org="sopra" data-reveal style="--c:var(--a3)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-package"/></svg></span>
-              <span class="project-org">Sopra Steria</span>
-            </div>
-            <h3 class="project-title">Inventory Management</h3>
-            <p class="project-desc">Inventory tracking application built on SharePoint Online and the Power Platform.</p>
-          </article>
-
-          <article class="project card spot" data-org="sopra" data-reveal style="--c:#f59e0b">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-alert"/></svg></span>
-              <span class="project-org">Sopra Steria</span>
-            </div>
-            <h3 class="project-title">Deviation Management System</h3>
-            <p class="project-desc">Process-driven application for raising, reviewing and approving deviations, with automated routing and notifications.</p>
-          </article>
-
-          <article class="project card spot" data-org="sopra" data-reveal style="--c:var(--a3)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-phone-app"/></svg></span>
-              <span class="project-org">Sopra Steria</span>
-            </div>
-            <h3 class="project-title">Power Apps applications</h3>
-            <p class="project-desc">Canvas apps on SharePoint and Dataverse that automate business processes, approvals and notifications.</p>
-          </article>
-
-          <article class="project card spot" data-org="accenture" data-reveal style="--c:var(--a2)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-file"/></svg></span>
-              <span class="project-org">Accenture</span>
-            </div>
-            <h3 class="project-title">Document Management (Global)</h3>
-            <p class="project-desc">Document management application on SharePoint Online, used globally.</p>
-          </article>
-
-          <article class="project card spot" data-org="accenture" data-reveal style="--c:var(--a1)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-seat"/></svg></span>
-              <span class="project-org">Accenture</span>
-            </div>
-            <h3 class="project-title">Seat Booking</h3>
-            <p class="project-desc">Workspace reservation application that lets employees book office seats.</p>
-          </article>
-
-          <article class="project card spot" data-org="accenture" data-reveal style="--c:#f472b6">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-heart-pulse"/></svg></span>
-              <span class="project-org">Accenture</span>
-            </div>
-            <h3 class="project-title">Covid Assessment</h3>
-            <p class="project-desc">Employee health self-assessment application supporting a safe return to the workplace.</p>
-          </article>
-
-          <article class="project card spot" data-org="cognizant" data-reveal style="--c:#38bdf8">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-cloud"/></svg></span>
-              <span class="project-org">Cognizant · Capital One</span>
-            </div>
-            <h3 class="project-title">TechOps · AWS S3 Innovation</h3>
-            <p class="project-desc">Innovation application delivered as SPFx web parts, including document CRUD operations.</p>
-          </article>
-
-          <article class="project card spot" data-org="cognizant" data-reveal style="--c:#34d399">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-gift"/></svg></span>
-              <span class="project-org">Cognizant · Capital One</span>
-            </div>
-            <h3 class="project-title">Gift Cards</h3>
-            <p class="project-desc">Development and enhancement of a gift card application backed by SharePoint and SQL.</p>
-          </article>
-
-          <article class="project card spot" data-org="cognizant" data-reveal style="--c:var(--a3)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-scale"/></svg></span>
-              <span class="project-org">Cognizant · Capital One</span>
-            </div>
-            <h3 class="project-title">Legal Compliance Meeting</h3>
-            <p class="project-desc">SharePoint application for organizing and tracking legal compliance meetings.</p>
-          </article>
-
-          <article class="project card spot" data-org="ltim" data-reveal style="--c:var(--a2)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-id-card"/></svg></span>
-              <span class="project-org">LTIMindtree</span>
-            </div>
-            <h3 class="project-title">Visitor Management System</h3>
-            <p class="project-desc">Visitor registration and approval application on SharePoint 2013, built with CSOM and ASP.NET.</p>
-          </article>
-
-          <article class="project card spot" data-org="ltim" data-reveal style="--c:var(--a1)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-shield"/></svg></span>
-              <span class="project-org">LTIMindtree</span>
-            </div>
-            <h3 class="project-title">Weapon Management System</h3>
-            <p class="project-desc">Secure record-keeping and approval application for weapon management.</p>
-          </article>
-
-          <article class="project card spot" data-org="ltim" data-reveal style="--c:#f59e0b">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-search"/></svg></span>
-              <span class="project-org">LTIMindtree</span>
-            </div>
-            <h3 class="project-title">Security Investigation System</h3>
-            <p class="project-desc">Case management application for recording and tracking security investigations.</p>
-          </article>
-
-          <article class="project card spot" data-org="ltim" data-reveal style="--c:var(--a3)">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-users"/></svg></span>
-              <span class="project-org">LTIMindtree</span>
-            </div>
-            <h3 class="project-title">Community Apps</h3>
-            <p class="project-desc">Community applications built on SharePoint 2013 with the provider-hosted app model.</p>
-          </article>
-
-          <article class="project card spot" data-org="ltim" data-reveal style="--c:#34d399">
-            <div class="project-top">
-              <span class="tile-icon"><svg class="i"><use href="#i-clipboard"/></svg></span>
-              <span class="project-org">LTIMindtree</span>
-            </div>
-            <h3 class="project-title">Work Permit Audit</h3>
-            <p class="project-desc">Audit application for work permits, with form submission and approvals.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Credentials -->
-    <section class="section" id="credentials">
-      <div class="container">
-        <header class="section-head" data-reveal>
-          <span class="eyebrow"><span class="eyebrow-num">05</span>Credentials</span>
-          <h2 class="section-title">Certified across the Microsoft cloud</h2>
-          <p class="section-sub">Microsoft certifications across Power Platform, Azure, Microsoft&nbsp;365 and SharePoint Server, backed by a degree in Computer Science &amp; Engineering.</p>
-        </header>
-
-        <div class="certs-grid" data-stagger>
-          <article class="cert card spot" data-reveal style="--c:var(--a3)">
-            <span class="cert-badge"><svg class="i"><use href="#i-award"/></svg></span>
+      <!-- Certifications -->
+      <section class="section" id="certifications" aria-labelledby="cert-title">
+        <h2 class="section-title" id="cert-title">Certifications</h2>
+        <ul class="certs">
+          <li class="cert reveal">
             <span class="cert-code">PL-900</span>
-            <h3 class="cert-name">Microsoft Power Platform Fundamentals</h3>
-            <span class="cert-issuer">Microsoft</span>
-          </article>
-          <article class="cert card spot" data-reveal style="--c:#38bdf8">
-            <span class="cert-badge"><svg class="i"><use href="#i-award"/></svg></span>
+            <div><p class="cert-name">Microsoft Power Platform Fundamentals</p><p class="cert-issuer">Microsoft</p></div>
+          </li>
+          <li class="cert reveal">
             <span class="cert-code">AZ-900</span>
-            <h3 class="cert-name">Microsoft Azure Fundamentals</h3>
-            <span class="cert-issuer">Microsoft</span>
-          </article>
-          <article class="cert card spot" data-reveal style="--c:var(--a2)">
-            <span class="cert-badge"><svg class="i"><use href="#i-award"/></svg></span>
+            <div><p class="cert-name">Microsoft Azure Fundamentals</p><p class="cert-issuer">Microsoft</p></div>
+          </li>
+          <li class="cert reveal">
             <span class="cert-code">MS-900</span>
-            <h3 class="cert-name">Microsoft 365 Fundamentals</h3>
-            <span class="cert-issuer">Microsoft</span>
-          </article>
-          <article class="cert card spot" data-reveal style="--c:var(--a1)">
-            <span class="cert-badge"><svg class="i"><use href="#i-award"/></svg></span>
+            <div><p class="cert-name">Microsoft 365 Fundamentals</p><p class="cert-issuer">Microsoft</p></div>
+          </li>
+          <li class="cert reveal">
             <span class="cert-code">70-331</span>
-            <h3 class="cert-name">Core Solutions of Microsoft SharePoint Server 2013</h3>
-            <span class="cert-issuer">Microsoft</span>
-          </article>
-        </div>
+            <div><p class="cert-name">Core Solutions of Microsoft SharePoint Server 2013</p><p class="cert-issuer">Microsoft</p></div>
+          </li>
+        </ul>
+      </section>
 
-        <div class="cred-grid">
-          <article class="card edu" data-reveal>
-            <h3 class="card-heading"><svg class="i"><use href="#i-cap"/></svg>Education</h3>
-            <ol class="edu-list">
-              <li>
-                <span class="edu-year">2016</span>
-                <div>
-                  <p class="edu-title">Bachelor of Engineering, Computer Science &amp; Engineering</p>
-                  <p class="edu-place">Sri Ramakrishna Institute of Technology · Anna University, Chennai</p>
-                </div>
-              </li>
-              <li>
-                <span class="edu-year">2012</span>
-                <div>
-                  <p class="edu-title">All India Senior School Certificate (Class XII)</p>
-                  <p class="edu-place">Kendriya Vidyalaya Kanjikode · CBSE</p>
-                </div>
-              </li>
-              <li>
-                <span class="edu-year">2010</span>
-                <div>
-                  <p class="edu-title">All India Secondary School Certificate (Class X)</p>
-                  <p class="edu-place">Kendriya Vidyalaya Kanjikode · CBSE</p>
-                </div>
-              </li>
-            </ol>
-          </article>
-
-          <article class="card langs" data-reveal>
-            <h3 class="card-heading"><svg class="i"><use href="#i-languages"/></svg>Languages</h3>
-            <div class="lang">
-              <div class="lang-head"><span class="lang-name">English</span><span class="lang-level">Proficient · C2</span></div>
-              <div class="level" role="img" aria-label="CEFR level C2, 6 of 6">
-                <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span>
-              </div>
+      <!-- Education & languages -->
+      <section class="section" id="education" aria-labelledby="edu-title">
+        <h2 class="section-title" id="edu-title">Education</h2>
+        <ol class="edu reveal">
+          <li>
+            <span class="edu-year">2016</span>
+            <div>
+              <p class="edu-title">Bachelor of Engineering — Computer Science and Engineering</p>
+              <p class="edu-place">Sri Ramakrishna Institute of Technology, Anna University, Chennai</p>
             </div>
-            <div class="lang">
-              <div class="lang-head"><span class="lang-name">German</span><span class="lang-level">Basic · A1</span></div>
-              <div class="level" role="img" aria-label="CEFR level A1, 1 of 6">
-                <span class="on"></span><span></span><span></span><span></span><span></span><span></span>
-              </div>
+          </li>
+          <li>
+            <span class="edu-year">2012</span>
+            <div>
+              <p class="edu-title">All India Senior School Certificate Examination (Class XII)</p>
+              <p class="edu-place">Kendriya Vidyalaya Kanjikode, CBSE</p>
             </div>
-            <div class="level-scale" aria-hidden="true"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
-            <p class="lang-note">Common European Framework of Reference (CEFR): A = basic, B = independent, C = proficient.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+          </li>
+          <li>
+            <span class="edu-year">2010</span>
+            <div>
+              <p class="edu-title">All India Secondary School Certificate Examination (Class X)</p>
+              <p class="edu-place">Kendriya Vidyalaya Kanjikode, CBSE</p>
+            </div>
+          </li>
+        </ol>
 
-    <!-- Contact -->
-    <section class="section section--contact" id="contact">
-      <div class="container">
-        <div class="contact-card" data-reveal>
-          <div class="contact-glow" aria-hidden="true"></div>
-          <span class="eyebrow"><span class="eyebrow-num">06</span>Contact</span>
-          <h2 class="contact-title">Let's build something <span class="grad-text">useful</span> together.</h2>
-          <p class="contact-text">Whether it's an SPFx solution, a Power Platform rollout, a Nintex modernization or a SharePoint migration, I'm happy to talk it through.</p>
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:vishnu.m70@gmail.com"><svg class="i"><use href="#i-mail"/></svg>vishnu.m70@gmail.com</a>
-            <button class="btn btn-ghost" type="button" data-copy="vishnu.m70@gmail.com"><svg class="i"><use href="#i-copy"/></svg>Copy email</button>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/vishnumuralikrishnan" target="_blank" rel="noopener"><svg class="i"><use href="#i-linkedin"/></svg>LinkedIn<svg class="i i-sm"><use href="#i-arrow-up-right"/></svg></a>
+        <h3 class="sub-title reveal">Languages</h3>
+        <dl class="langs reveal">
+          <div><dt>English</dt><dd>Proficient <span class="cefr">C2</span></dd></div>
+          <div><dt>German</dt><dd>Basic <span class="cefr">A1</span></dd></div>
+        </dl>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section--last" id="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+        <div class="contact reveal">
+          <a class="contact-row" href="mailto:vishnu.m70@gmail.com">
+            <svg class="i"><use href="#i-mail"/></svg>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">vishnu.m70@gmail.com</span>
+          </a>
+          <a class="contact-row" href="https://www.linkedin.com/in/vishnumuralikrishnan" target="_blank" rel="noopener">
+            <svg class="i"><use href="#i-linkedin"/></svg>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/vishnumuralikrishnan <svg class="i i-xs"><use href="#i-external"/></svg></span>
+          </a>
+          <div class="contact-row">
+            <svg class="i"><use href="#i-pin"/></svg>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Bangalore, India</span>
           </div>
-          <p class="contact-meta"><svg class="i"><use href="#i-map-pin"/></svg>Bangalore, India</p>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year">2026</span> Vishnu Muralikrishnan</p>
-      <p class="footer-note">SharePoint · Microsoft 365 · Power Platform · Azure</p>
-      <div class="footer-social">
-        <a class="icon-btn" href="https://www.linkedin.com/in/vishnumuralikrishnan" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="i"><use href="#i-linkedin"/></svg></a>
-        <a class="icon-btn" href="https://github.com/vishnumurali" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="i"><use href="#i-github"/></svg></a>
-        <a class="icon-btn" href="mailto:vishnu.m70@gmail.com" aria-label="Send an email"><svg class="i"><use href="#i-mail"/></svg></a>
-      </div>
-    </div>
-  </footer>
+      <footer class="footer">
+        <p>© <span id="year">2026</span> Vishnu Muralikrishnan</p>
+        <p>Last updated October 2026</p>
+      </footer>
+    </main>
+  </div>
 
-  <a class="to-top icon-btn" href="#top" aria-label="Back to top"><svg class="i"><use href="#i-arrow-up"/></svg></a>
-  <div class="toast" role="status" aria-live="polite"></div>
+  <a class="to-top" href="#top" aria-label="Back to top"><svg class="i"><use href="#i-arrow-up"/></svg></a>
 </body>
 </html>
