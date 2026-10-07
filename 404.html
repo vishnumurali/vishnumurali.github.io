@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Vishnu Muralikrishnan</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <main class="notfound">
+    <div>
+      <h1 class="grad-text">404</h1>
+      <p>This page doesn't exist. It may have moved, or the link may be mistyped.</p>
+      <a class="btn btn-primary" href="/">Back to the homepage</a>
+    </div>
+  </main>
+</body>
+</html>
